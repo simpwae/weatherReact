@@ -8,7 +8,7 @@ const App = () => {
     axios.get('/user?ID=12345')
     .then(function (response) {
       // handle success
-      console.log(response.);
+      console.log(response);
     })
     .catch(function (error) {
       // handle error
