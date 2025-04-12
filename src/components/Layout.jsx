@@ -2,36 +2,38 @@ import React from "react";
 
 const Layout = () => {
   return (
-    <>
-      <div className="w-40 h-full bg-gray-500 p-3">
-        <input type="text" className="rounded-xl mx-auto bg-gray-200 w-20" />
-        <img src="" alt="" />
-        <h2></h2>
-        <div>
-          <p></p>
-          <p></p>
+    <section className="p-3 text-center flex justify-center">
+      <div className="w-72 rounded-xl h-screen bg-gray-500 p-3">
+        <input
+          type="text"
+          className="rounded-xl flex justify-center mx-auto bg-gray-200 w-52 px-4 outline-none h-7 my-5"
+        />
+        <img src="" alt="Weather IMG" />
+        <h2>TEMP</h2>
+        <div className="flex justify-between p-5">
+          <p>location</p>
+          <p>day</p>
         </div>
         <hr />
         <div>
-          <p></p>
-          <p></p>
-          <p></p>
+          <p>text</p>
+          <p>text</p>
+          <p>text</p>
         </div>
-        <div>
+        <div className="bg-gray-700 p-5 flex justify-between">
           <div>
             <div>
-              <h4></h4>
-              <p></p>
+              <h4>percentage</h4>
+              <p>humidity</p>
             </div>
           </div>
-          <div>
-            <h4></h4>
-            <p></p>
+          <div className="">
+            <h4>km/h</h4>
+            <p>Wind Speed</p>
           </div>
         </div>
       </div>
-   
-    </>
+    </section>
   );
 };
 
