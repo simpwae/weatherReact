@@ -1,9 +1,7 @@
-import React from 'react'
+const api = () => {};
 
 const App = () => {
-  return (
-    <div>App</div>
-  )
-}
+  return <main></main>;
+};
 
-export default App
+export default App;
