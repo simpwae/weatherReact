@@ -18,10 +18,7 @@ const Layout = () => {
       .then(function (response) {
         // handle success
         setFeelLike(response.data.main.feels_like);
-        setGroundLevel(response.data.main.grnd_like);
         setHumidity(response.data.main.humidity);
-        setPressure(response.data.main.pressure);
-        setSeaLevel(response.data.main.sea_level);
         setTemp(response.data.main.temp);
         setMaxTemp(response.data.main.temp_max);
         setMinTemp(response.data.main.temp_min);
