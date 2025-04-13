@@ -2,19 +2,20 @@ import axios from "axios";
 import React, { useState } from "react";
 
 const Layout = () => {
-  const [city, setCity] = useState();
+  const [searchCity, setSearchCity] = useState("London");
+
+  setSearchCity(() => {});
+
+  const [location, setLocation] = useState();
   const [feelLike, setFeelLike] = useState();
-  const [groundLevel, setGroundLevel] = useState();
   const [humidity, setHumidity] = useState();
-  const [pressure, setPressure] = useState();
-  const [seaLevel, setSeaLevel] = useState();
   const [temp, setTemp] = useState();
   const [maxTemp, setMaxTemp] = useState();
   const [minTemp, setMinTemp] = useState();
   const [windSpeed, setWindSpeed] = useState();
+  let city = searchCity;
   let weatherData = () => {
     let key = "837452185e3c4c64874c17d6aea6bba5";
-    let city = "Peshawar";
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric`;
     axios
       .get(url)
@@ -44,7 +45,7 @@ const Layout = () => {
         <input
           type="text"
           className="rounded-xl flex text-gray-800 justify-center mx-auto bg-gray-200 w-52 px-4 outline-none h-7 my-5"
-          onBlur={weatherData}
+          value={setSearchCity}
         />
         <img
           src="/img.png"
@@ -56,7 +57,7 @@ const Layout = () => {
           <sup>o</sup>C
         </h2>
         <div className="flex justify-between p-5">
-          <p>{city}</p>
+          <p>{location}</p>
           <p>Day</p>
         </div>
         <hr />
