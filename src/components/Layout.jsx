@@ -8,7 +8,11 @@ const Layout = () => {
           type="text"
           className="rounded-xl flex text-gray-800 justify-center mx-auto bg-gray-200 w-52 px-4 outline-none h-7 my-5"
         />
-        <img src="/img.png" className="w-72 h-52" alt="Weather IMG" />
+        <img
+          src="/img.png"
+          className="w-72 h-52 object-cover"
+          alt="Weather IMG"
+        />
         <h2 className="text-5xl font-semibold">
           30<sup>o</sup>C
         </h2>
