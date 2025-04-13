@@ -1,6 +1,5 @@
 import React from "react";
 import axios from "axios";
-import WeatherCard from "./components/WeatherCard";
 import Layout from "./components/Layout";
 
 const App = () => {
@@ -19,10 +18,10 @@ const App = () => {
       });
   };
   return (
-    <>
+    <main className="overflow-y-hidden h-screen bg-gray-800">
       {/* <WeatherCard /> */}
       <Layout />
-    </>
+    </main>
   );
 };
 
