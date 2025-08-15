@@ -3,20 +3,6 @@ import React, { useState } from "react";
 import img from "../../public/img.png";
 
 const Layout = () => {
-  const cloudy = "/cloudy.png";
-  const rain = "/lightRain.png";
-  const sunny = "/sunny.png";
-
-  const imagesSrc = (temp) => {
-    if (temp > 30) {
-      return sunny;
-    } else if (temp <= 30) {
-      return rain;
-    } else {
-      return cloudy;
-    }
-  };
-
   const [inputCity, setInputCity] = useState(""); // User input
 
   const [city, setCity] = useState();
